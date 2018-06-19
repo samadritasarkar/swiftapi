@@ -1,0 +1,11 @@
+
+<form class="form-horizontal" role="form" action="" method="POST" enctype="multipart/form-data">
+     {% csrf_token %}
+     {% include 'files/form-template.html' %}
+
+    <button type="submit" >GET INFO</button>
+ </form>
+
+{% if data %}
+    {{ data }}
+{% endif %}

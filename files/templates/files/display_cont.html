@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{ token }}
+<br>
+{{ files }}
+{% for i in obj_arr %}
+    <a href="{% url 'files:cont_info' i  %}"> {{ i }} </a><br/>
+{% endfor %}
+</body>
+</html>
