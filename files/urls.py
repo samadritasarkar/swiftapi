@@ -26,6 +26,8 @@ app_name = 'files'
 urlpatterns = [
 
     url('info/$', views.ContainerList.as_view(), name="acc_info"),
-    url('info/(?P<container>[a-zA-Z0-9-]+)/$', views.ObjectList.as_view(), name="cont_info"),
-    url('info/(?P<container>[a-zA-Z0-9-]+)/(?P<object>[a-zA-Z0-9.-_]+)/', views.download_object, name="obj_info")
+    url('info/(?P<container>[a-zA-Z0-9-_]+)/$', views.ObjectList.as_view(), name="cont_info"),
+    url('info/(?P<container>[a-zA-Z0-9-_]+)/(?P<object>[a-zA-Z0-9.-_]+)/download', views.DownloadObject.as_view(), name="obj_download"),
+    url('info/(?P<container>[a-zA-Z0-9-_]+)/upload', views.upload, name="upload"),
+    url('info/(?P<container>[a-zA-Z0-9-_]+)/(?P<object>[a-zA-Z0-9.-_]+)/$', views.ObjectDetails.as_view(), name="obj_info"),
 ]

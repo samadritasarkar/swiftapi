@@ -1,8 +1,9 @@
 from django import forms
-from .models import Objects
+from .models import Object
 
 class ObjectForm(forms.ModelForm):
 
     class Meta:
-        model = Objects
-        fields = ['name', 'file']
+        model = Object
+        fields = ['file']
+
