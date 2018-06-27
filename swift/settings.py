@@ -24,7 +24,7 @@ SECRET_KEY = 'eo4j=-#(&z1&0!h=*9e$lz3vzcjt4^veh7yj%*b#a7#3ydl$!a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['10.196.3.184']
+ALLOWED_HOSTS = ['10.196.3.184','10.11.160.94']
 
 
 # Application definition
